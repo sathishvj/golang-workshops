@@ -1,0 +1,16 @@
+application: myhelloworld-app-id
+version: 0-1
+runtime: go
+api_version: go1
+
+handlers:
+# TODO: set the handler for urls containing: /images
+- url:
+  # TODO: to the directory of the same name: images (Note that it is not /images)
+  static_dir:
+
+- url: /.*
+  script: _go_app
+
+# TODO: now run the app with: dev_appserver.py 2-ex
+# TODO: then navigate to localhost:8080/images/gopher.jpg

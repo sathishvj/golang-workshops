@@ -1,0 +1,18 @@
+# TODO: add a name for your application
+# TODO: this is the same unique id that you register for this app on the appengine server
+application:
+version: 0-1
+
+# TODO: set the runtime as: go
+runtime:
+
+# TODO: set the apiversion as: go1
+api_version:
+
+handlers:
+# TODO: set all urls (/.*) ...
+- url:
+	# TODO: as being handled by: _go_app
+  script:
+
+# TODO: now, from the directory above where this file is, you can run the server locally with: dev_appserver.py 1-ex

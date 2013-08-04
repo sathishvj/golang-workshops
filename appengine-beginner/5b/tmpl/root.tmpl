@@ -1,0 +1,18 @@
+{{define "root"}}
+<html>
+<body>
+	<h3>Enter new info:</h3>
+	<form action="/add">
+		<input name="info" type="text">
+		<input type="submit">
+	</form>
+
+	<hr>
+
+	<h2>Existing Infos</h2>
+	{{range .}}
+	{{.Data}} at {{.Time.Format "2006-01-02 3:04" }}<br>
+	{{end}}
+</body>
+</html>
+{{end}}
